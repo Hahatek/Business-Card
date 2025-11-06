@@ -1,0 +1,211 @@
+/* Styl dotyczący strony */
+*{
+    font-family: 'Lato', sans-serif; /* Ustawienie czcinki dla całej storony */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #780206;
+    background: -webkit-linear-gradient(to right, #061161, #780206); /* Tworzy nam gradient na stronie do prawej strony */
+    background: linear-gradient(to right, #061161, #780206); 
+}
+section {
+    box-sizing: border-box;
+}
+/* Styl dotyczący menu */
+header{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width: 100%; 
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    position: fixed; /* Pasek menu podąża za nami na stronie */
+    background-color: rgb(0,0,0, .5); /* Kolor tła ustwawiony z przezroczystością */
+    backdrop-filter: blur(10px); /* Rozmauje nam tło w header */
+    z-index: 100;
+}
+nav{   
+    text-align: center;
+    width: fit-content;
+    display: block;
+}
+nav a{
+    display: inline-block;
+    color: white;
+    border-left: 2px solid white;
+    padding: 0 5px 0 10px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: black;
+}
+a{
+    cursor: pointer; /* Dla każdego odsyłacza kursor zmieni się na łapkę */
+    transition: all .7s;
+}
+.logo{
+    width: 200px;
+}
+/* Styl dotyczący sekcji 1 */
+.sekcja1{
+    border-bottom: 2px solid white;
+    min-height: 75vh;
+    display: flex;
+    padding: 100px 50px;
+    color: white;
+    background-image:url(kubeczki.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+h1{
+    font-weight: 300;
+    font-size: 45px;
+    margin-bottom: 100px;
+}
+h1 span{
+    font-weight: bold;
+}
+p{
+    max-width: 40vw;
+    line-height: 27px;
+}
+.cta{
+    border: 2px solid #780206;
+    background-color: #780206;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-top: 60px;
+    display: block;
+    width: fit-content;
+}
+.cta:hover{
+    background: transparent;
+}
+.tekst{
+    display: inline;
+    margin-left: 50px;
+}
+.tekst a{
+    text-decoration: none;
+}
+.tekst2{
+    border: 2px solid white;
+    width: 50vh;
+    height: 10vh;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.tekst3{
+    border: 2px solid white;
+    width: 50vh;
+    height: 20vh;
+    margin-top: 50px;
+}
+/* Styl dotyczący sekcji 2 */
+.sekcja2{
+    border-bottom: 2px solid white;
+    min-height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 50px 90px;
+}
+.sekcja2 div {
+    width: 50%;
+}
+h2, li, p{
+    color: white;
+}
+img.kubek {
+    width: 100%;
+    max-width: 480px;
+    height: auto;    
+    aspect-ratio: 800 / 708;
+    display: block;    
+}
+li{
+    margin-bottom: 10px;
+}
+li span{
+    font-weight: bold;
+}
+span{
+ color:white;
+ max-width: 50vh;
+}
+/* Styl dotyczący strzałek pod każdą sekcją  */
+.strzalka{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: block;
+    margin: -25px auto 0;
+    z-index: 0;
+}
+.strzalka svg{
+    margin: auto;
+    width:  20px;
+    height: auto;
+    display: block;
+    position: relative;
+    bottom: -10px;  
+}
+/* Styl dotyczący sekcji 3 */
+.sekcja3{
+    border-bottom: 2px solid white;
+    height: 80vh;
+    display: flex;
+    padding: 50px 50px 90px;
+}
+.asterix{
+
+    font-style:italic;
+    border-bottom: 1px dotted white;
+    font-weight: bold;
+}
+form{
+    margin: auto;
+    padding: auto;
+    width: 60%;
+    display: block;
+    color: white;
+    font-size: 20px;
+    max-width: 80%;
+}
+label{
+    display: inline-block;
+    width: 40%;
+    margin: 5px 10px 5px 0;
+    font-size: 20px;
+}
+input{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+input:not(:last-child):not([type="checkbox"]){
+    width: calc(60% - 10px); /* Oblicza szerokość    */
+}
+#text3{
+    height: 50px;
+    width: 60%;
+}
+.ctad {
+        border: 2px solid #780206;
+        background-color: #780206;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        transition: all .7s;
+        display: block;
+}
+.ctad:hover{
+    background: transparent;
+}

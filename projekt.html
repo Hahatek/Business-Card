@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+    <!-- Kolejne 3 komendy "link" wczytują nam czcionkę z internetu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Projekt</title>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="logo_v2b.svg" alt="logo"> 
+            <!-- svg to grafika w postaci wektorowej, 
+            która nie traci jakości podczas zmiany rozmiaru. 
+            Jest też bardzo lekka i zalecana na stronach www. -->
+    <nav>
+        <a href="#twoj_kubek">Twój kubek</a> <!-- a href będzie nas przenosiło do danej części strony -->
+        <a href="#informacje">Informacje</a>
+        <a href="#zamow">Zamów</a>
+    </nav>
+    </header>
+    <section class="sekcja1" id="twoj_kubek">
+        <div class="tekst">
+            <h1>Jedyny <span>kubek</span>, którego </br> tak naprawdę <span>potrzebujesz!</span></h1>
+            <h2>Zamówienie jak i wysyłkę zrealizujemy w ciągu 24h!</h2>
+            <p>Ceramiczne kubki, które oferujemy są magiczne, tworzone za każdym razem z nutką pozytywnych emocji.
+                Potrzebujesz bratniej duszy do poranej kawy czy herbaty?
+                Możesz z nami takiego stworzyć. 
+            </p>
+            <a href="#zamow" class="cta">Zamów teraz!</a>
+        </div>
+       
+    </section>
+        <div class="strzalka">
+        <!-- Tworzy nam strzałkę, która kieruje klienta na dalsze części strony, svg to grafika w postaci wektorowej, 
+            która nie traci jakości podczas zmiany rozmiaru. Jest też bardzo lekka i zalecana na stronach www. -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8
+                0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32
+                14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+            </svg>
+        </div>
+    <section class="sekcja2" id="informacje">
+        <div>    
+        <h2>Cechy kubka:</h2>
+            <ul>
+                <li>Kolor: Biały, aby pasował do każdej kuchni czy biurka.</li>
+                <li>Materiał: Wysokiej jakości ceramika, zapewniająca trwałość i styl.</li>
+                <li>Pojemność: 330ml, Idealny rozmiar, aby cieszyć się ulubionym napojem przez długi czas.</li>
+            </ul>
+        
+        <h2>Spersonalizuj go według swoich upodobań:</h2>
+            <ul>
+                <li>Dodaj swoje imię</li>
+                <li>ulubiony cytat</li>
+                <li>grafikę lub dowolny wzór który wyrazi Twoją wyjątkowość! </li>
+            </ul> 
+        <p>
+            Nasze zaawansowane technologie drukarskie gwarantują trwałość i doskonałą jakość.
+        </p>
+        <h2>Dlaczego nasze kubki są wyjątkowe?</h2>
+            <ul>
+                <li><strong>Indywidualność:</strong> Każdy kubek jest wyjątkowy, tak jak Ty!</li>
+                <li><strong>Eko-friendly:</strong> Dbamy o środowisko, dlatego nasze kubki są zazwyczaj wykonane z materiałów przyjaznych 
+                    dla środowiska i mogą być poddane recyklingowi. Kubki zostały stworzone w oparciu o obwiązujące normy Unii Europejskiej.</li>
+                <li><strong>Idealny prezent:</strong> Doskonały pomysł na prezent dla bliskiej osoby lub samego siebie.</li>
+                <li><strong>Personalizacja:</strong> Oferujemy możliwość personalizacji kubków, co pozwala klientom dostosować
+                     je do własnych upodobań i stylu życia.</li>
+                                
+            </ul>
+        </div>
+        <img class="kubek" src="kubek-bialy.webp"> 
+        <!-- Format webp to format grafiki rastrowej, takiej jak jpg czy PNG. 
+            Może zawierać przezroczystość i też jest dużo lżejsza niż pliki png 2 min-->
+    </section>
+        <div class="strzalka">
+        <!-- Tworzy nam strzałkę, która kieruje klienta na dalsze części strony, svg to grafika w postaci wektorowej, 
+            która nie traci jakości podczas zmiany rozmiaru. Jest też bardzo lekka i zalecana na stronach www. -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+            <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8
+            0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32
+            14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+            </svg>
+        </div>
+    <section class="sekcja3" id="zamow">
+        <!-- imie, nazwisko, nr.telefonu, email, możliwość zaznaczenia swojego kuba, pole na cytaty, wklejenie obrazka -->
+        <form action="mailto:test@gmail.com" method="post">
+            <label for='text'>Imię: <span class='asterix'>*</span></label>
+            <input type="text" id="text" required name="text"> </br>
+            <label for='text1'>Nazwisko: <span class='asterix'>*</span></label>
+            <input type="text" id="text1" required name="text"></br>
+            <label for='email'>Email: <span class='asterix'>*</span></label>
+            <input type="email" id="email" required name="email"></br>
+            <label for='number'>Nr. telefonu: <span class='asterix'>*</span></label>
+            <input type="number" id="number" required name="number"></br>
+            <label for='text'>Wpisz swój cytat: <span class='asterix'>*</span></label>
+            <textarea rows="4" cols="70"></textarea>
+            <label for="kubek">Chcę dodać własny tekst na kubek<span class='asterix'>*</span></label>
+            <input type="checkbox" id="kubek" name="kubek" value="kubek">
+            <button class="ctad">Złóż zamówienie!</button>
+        </form>
+        
+    </section>
+</body>
+</html>
